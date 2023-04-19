@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[NAME] - [USER_NAME] - CodersSena</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/cdn/css/profile.css">
+
+    <script src="/p/account_cdn/js/demoUser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="dark-bg">
+    <div class="container mt-3">
+        <div>
+            <img class="USER_PROFILE_PIC" id="USER_PROFILE_PIC" src="/cdn/img/branding/round-logo.png" alt=""
+                width="15%">
+            <h1 class="d-flex align-items-center" id="NAME-text-details">[NAME]&nbsp;
+                <i class="bi bi-patch-check-fill verfied" id="VERIFIED"
+                    title="Verified badges are given to professional coders with 100+ experience, 5+ awards, 3+ languages and 10+ projects on CodersSena."
+                    data-bs-toggle="modal" data-bs-target="#verifiedUser">
+                    Verified </i>
+                <i class="bi bi-exclamation-triangle-fill banned" id="VERIFIED" title="Click to know more."
+                    data-bs-toggle="modal" data-bs-target="#bannedUser"> Banned </i>
+            </h1>
+            <a id="USER_NAME-text-details">[USER_NAME]</a><br>
+            <a id="ABOUT_USER-text-details">[ABOUT_USER]</a><br><br>
+            <a id="EXPERIENCE-text-details">Experience - <i class="experience" title="Hi"> 0.75</i></a>&nbsp;
+            <a>Experience - <i class="experience" title="Hi"> 0.75 </i></a>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs nav-fill" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#awards">Awards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#languages">Languages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#projects">Projects</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="awards" class="container tab-pane active"><br>
+                <p id="awards-won-by-user-text">Awards won by [NAME] organized by CodersSena.</p>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img src="/cdn/img/branding/round-logo.png" class="rounded-circle me-2" alt="Profile Image"
+                                width="50" height="50">
+                            <span>John Doe</span>
+                        </div>
+                        <span class="bi bi-award-fill text-warning" style="font-size: 2rem;"></span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img src="/cdn/img/branding/round-logo.png" class="rounded-circle me-2" alt="Profile Image"
+                                width="50" height="50">
+                            <span>John Doe</span>
+                        </div>
+                        <span class="bi bi-award-fill" style="font-size: 2rem; color: silver;"></span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img src="/cdn/img/branding/round-logo.png" class="rounded-circle me-2" alt="Profile Image"
+                                width="50" height="50">
+                            <span>John Doe</span>
+                        </div>
+                        <span class="bi bi-award-fill" style="font-size: 2rem; color: #CD7F32;"></span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="languages" class="container tab-pane fade"><br>
+                <p id="awards-won-by-user-text">Languages [NAME] knows are listed below.</p>
+                <p class="language-skills-heading">HTML</p>
+                <div class="skills language-html">90%</div>
+
+                <p class="language-skills-heading">CSS</p>
+                <div class="skills language-css">80%</div>
+
+                <p class="language-skills-heading">JavaScript</p>
+                <div class="skills language-js">65%</div>
+
+                <p class="language-skills-heading">PHP</p>
+                <div class="skills language-php" skill-percentage="65%">60%</div>
+            </div>
+
+
+            <div id="projects" class="container tab-pane fade"><br>
+                <p>Projects made [NAME] knows are listed below.</p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="/cdn/img/branding/square-logo.png" class="card-img-top project-img"
+                                alt="Card Image 1">
+                            <div class="card-body">
+                                <h5 class="card-title project-title">Card Title 1</h5>
+                                <p class="card-text project-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="card-rating project-rating mb-2">
+                                    <i class="bi bi-star-fill checked rating-stars"></i>
+                                    <i class="bi bi-star-fill checked rating-stars"></i>
+                                    <i class="bi bi-star-fill checked rating-stars"></i>
+                                    <i class="bi bi-star rating-stars"></i>
+                                    <i class="bi bi-star rating-stars"></i>
+                                    <span class="card-rating project-rating-text">(3.0)</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="/cdn/img/branding/square-logo.png" class="card-img-top project-img"
+                                alt="Card Image 1">
+                            <div class="card-body">
+                                <h5 class="card-title project-title">Card Title 1</h5>
+                                <p class="card-text project-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="card-rating project-rating">
+                                    <i class="bi bi-star-fill checked rating-stars"></i>
+                                    <i class="bi bi-star-fill checked rating-stars"></i>
+                                    <i class="bi bi-star-fill checked rating-stars"></i>
+                                    <i class="bi bi-star rating-stars"></i>
+                                    <i class="bi bi-star rating-stars"></i>
+                                    <span class="card-rating project-rating-text">(3.0)</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="/cdn/img/branding/square-logo.png" class="card-img-top project-img"
+                                alt="Card Image 1">
+                            <div class="card-body">
+                                <h5 class="card-title project-title">Card Title 1</h5>
+                                <p class="card-text project-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="card-rating project-rating">
+                                    <i class="bi bi-star-fill checked rating-stars"></i>
+                                    <i class="bi bi-star-fill checked rating-stars"></i>
+                                    <i class="bi bi-star-fill checked rating-stars"></i>
+                                    <i class="bi bi-star rating-stars"></i>
+                                    <i class="bi bi-star rating-stars"></i>
+                                    <span class="card-rating project-rating-text">(3.0)</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="/cdn/img/branding/square-logo.png" class="card-img-top project-img"
+                                alt="Card Image 1">
+                            <div class="card-body">
+                                <h5 class="card-title project-title">Card Title 1</h5>
+                                <p class="card-text project-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="card-rating project-rating">
+                                    <i class="bi bi-star-fill checked rating-stars"></i>
+                                    <i class="bi bi-star-fill checked rating-stars"></i>
+                                    <i class="bi bi-star-fill checked rating-stars"></i>
+                                    <i class="bi bi-star rating-stars"></i>
+                                    <i class="bi bi-star rating-stars"></i>
+                                    <span class="card-rating project-rating-text">(3.0)</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="verifiedUser" tabindex="-1" aria-labelledby="verifiedUserLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="verifiedUserLabel"> <i class="bi bi-patch-check-fill"></i>
+                        Verified Account!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-light">
+                    Verified badges are given to professional coders with 100+ experience, 5+ awards, 3+ languages and
+                    10+ projects on CodersSena.<br>
+                    <button type="button" class="btn btn-success mt-2" data-bs-dismiss="modal">Get Verified Account</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="bannedUser" tabindex="-1" aria-labelledby="verifiedUserLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title" id="verifiedUserLabel"> <i class="bi bi-exclamation-triangle-fill"></i>
+                        Banned Account!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-light">
+                    This user [USER_NAME] is banned for 3 months for not following platform rules.<br><br>
+                    Please follow rules and use this platform with decorum so that we don't need to take such strict
+                    actions.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
